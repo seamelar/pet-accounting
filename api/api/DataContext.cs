@@ -5,7 +5,9 @@ namespace api
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base (options) { }
+        public DataContext(DbContextOptions<DataContext> options) : base (options) {
+            Console.WriteLine("Вызван DataContext конструктор");
+        }
 
         public DbSet<Animal> Animals { get; set; }
         public DbSet<AnimalOwner> Owners { get; set; }

@@ -1,0 +1,7 @@
+﻿namespace Library
+{
+    public partial class MyFirstPartialClass
+    {
+        public string? Name { set; get; }
+    }
+}

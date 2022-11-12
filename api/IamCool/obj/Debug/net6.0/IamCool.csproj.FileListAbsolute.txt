@@ -1,0 +1,15 @@
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.csproj.AssemblyReference.cache
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.GeneratedMSBuildEditorConfig.editorconfig
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.AssemblyInfoInputs.cache
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.AssemblyInfo.cs
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.csproj.CoreCompileInputs.cache
+C:\aho\repos\CatsStatistics\api\IamCool\bin\Debug\net6.0\IamCool.deps.json
+C:\aho\repos\CatsStatistics\api\IamCool\bin\Debug\net6.0\IamCool.dll
+C:\aho\repos\CatsStatistics\api\IamCool\bin\Debug\net6.0\IamCool.pdb
+C:\aho\repos\CatsStatistics\api\IamCool\bin\Debug\net6.0\Library.dll
+C:\aho\repos\CatsStatistics\api\IamCool\bin\Debug\net6.0\Library.pdb
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.csproj.CopyComplete
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.dll
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\refint\IamCool.dll
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\IamCool.pdb
+C:\aho\repos\CatsStatistics\api\IamCool\obj\Debug\net6.0\ref\IamCool.dll

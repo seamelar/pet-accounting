@@ -27,4 +27,37 @@ export class AnimalService {
   deleteAnimal(id:number|string) {
     return this.http.delete(this.animalAPIUrl + `/Animals/${id}`);
   }
+  // Owners
+  getAnimalOwnersList(): Observable<any[]> {
+    return this.http.get<any>(this.animalAPIUrl + '/AnimalOwners');
+  }
+
+  addAnimalOwners(data: any) {
+    return this.http.post(this.animalAPIUrl + '/AnimalOwners', data);
+  }
+
+  updateAnimalOwners(id: number | string, data: any) {
+    return this.http.put(this.animalAPIUrl + `/AnimalOwners/${id}`, data);
+  }
+
+  deleteAnimalOwners(id: number | string) {
+    return this.http.delete(this.animalAPIUrl + `/AnimalOwners/${id}`);
+  }
+
+  // Veterinarians
+  getVeterinariansList(): Observable<any[]> {
+    return this.http.get<any>(this.animalAPIUrl + '/Veterinarians');
+  }
+
+  addVeterinarians(data: any) {
+    return this.http.post(this.animalAPIUrl + '/Veterinarians', data);
+  }
+
+  updateVeterinarians(id: number | string, data: any) {
+    return this.http.put(this.animalAPIUrl + `/Veterinarians/${id}`, data);
+  }
+
+  deleteVeterinarians(id: number | string) {
+    return this.http.delete(this.animalAPIUrl + `/Veterinarians/${id}`);
+  }
 }

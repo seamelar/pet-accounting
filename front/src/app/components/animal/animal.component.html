@@ -1,0 +1,50 @@
+<div class="container mt-2">
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-outline-dark float-end m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+          (click)="modalAdd()">
+    Добавить питомца
+  </button>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Идентификатор</th>
+        <th>Имя</th>
+        <th>Вид</th>
+        <th>Владелец</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of animalList|async">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.species}}</td>
+        <td>{{animalsOwnersMap.get(item.animalOwnerId)}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert alert-success" role="alert" id="add-success-alert">
+    Питомец успешно добавлен!
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">{{modalTitle}}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                  (click)="modalClose()" id="add-modal-close">
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-add-animal [animal]="animal" *ngIf="activateAddAnimalComponent"></app-add-animal>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
