@@ -1,0 +1,27 @@
+<form>
+  <div class="md-3">
+    <label for="animalOwnerId" class="form-label">Имя владельца</label>
+    <!--<input type="text" class="form-control" name="animalOwnerId" [(ngModel)]="animalOwnerId" *ngIf="animal.id!=0" disabled>-->
+    <select class="form-control" name="animalOwnerId" id="animalOwnerId" [(ngModel)]="animalOwnerId" *ngIf="animal.id==0">
+      <option *ngFor="let item of animalOwnersList|async" [value]="item.id">{{item.name}}</option>
+    </select>
+  </div>
+  <!--<div class="mb-3">
+    <label for="veterinarianList" class="form-label">Имя врача</label>
+    <select class="form-control" name="veterinarian" id="veterinarian" [(ngModel)]="veterinarianList">
+      <option *ngFor="let item of veterinarianList|async" [value]="item.name">{{item.name}}</option>
+    </select>
+  </div>-->
+  <div class="mb-3">
+    <label for="species" class="form-label">Вид</label>
+    <input type="text" class="form-control" [(ngModel)]="species" name="species">
+  </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">Имя питомца</label>
+    <input type="text" class="form-control" [(ngModel)]="name" name="name">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="addAnimal()" *ngIf="animal.id==0">Добавить</button>
+  </div>
+</form>

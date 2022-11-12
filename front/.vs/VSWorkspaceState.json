@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\animal",
+    "\\src\\app\\components\\navbar",
+    "\\src\\app\\components\\owner",
+    "\\src\\app\\components\\veterinarian"
   ],
   "PreviewInSolutionExplorer": false
 }
