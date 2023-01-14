@@ -11,6 +11,7 @@ namespace api
 
         public DbSet<Animal> Animals { get; set; }
         public DbSet<AnimalOwner> Owners { get; set; }
+        public DbSet<Feed> FeedingHistory { get; set; }
         public DbSet<Veterinarian> Veterinarians { get; set; }
     }
 }
