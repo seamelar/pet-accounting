@@ -13,7 +13,7 @@ export class AnimalComponent implements OnInit {
   animalOwnersList!: Observable<any[]>;
   animalsOwnersList: any = [];
 
-  animalsOwnersMap: Map<number, string> = new Map()
+  animalsOwnersMap: Map<number, string> = new Map();
 
   constructor(private service:AnimalService) {}
 
@@ -23,7 +23,7 @@ export class AnimalComponent implements OnInit {
     this.refreshAnimalsOwnersMap();
   }
 
-  // Variables
+
   modalTitle: string = '';
   activateAddAnimalComponent: boolean = false;
   animal: any;
@@ -34,7 +34,7 @@ export class AnimalComponent implements OnInit {
       name: null,
       species: null,
       animalOwnerId: null
-    }
+    };
     this.modalTitle = "Новый питомец";
     this.activateAddAnimalComponent = true;
   }
