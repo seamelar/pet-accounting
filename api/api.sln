@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library2", "IamCool\Library
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{2904EF04-8B79-4769-A651-AEB2692AE92D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{ADB917BE-A634-4A8E-AD2F-A903E31250E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedManagementService", "Services\FeedManagementService\FeedManagementService.csproj", "{A04EA64B-D820-4E47-9D1E-E7C792D20E15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +37,16 @@ Global
 		{2904EF04-8B79-4769-A651-AEB2692AE92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2904EF04-8B79-4769-A651-AEB2692AE92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2904EF04-8B79-4769-A651-AEB2692AE92D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A04EA64B-D820-4E47-9D1E-E7C792D20E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A04EA64B-D820-4E47-9D1E-E7C792D20E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A04EA64B-D820-4E47-9D1E-E7C792D20E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A04EA64B-D820-4E47-9D1E-E7C792D20E15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A04EA64B-D820-4E47-9D1E-E7C792D20E15} = {ADB917BE-A634-4A8E-AD2F-A903E31250E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05BBAECD-D8CC-4126-A774-2C776C55FFCA}
