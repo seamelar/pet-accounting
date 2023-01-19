@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VNl7Hgme162WGS6uKBCqeM2QnosgEzfUqx43Xhrw9Es=",
+  "Source": "FeedManagementService",
+  "BasePath": "_content/FeedManagementService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
