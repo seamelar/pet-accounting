@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "VNl7Hgme162WGS6uKBCqeM2QnosgEzfUqx43Xhrw9Es=",
+  "Hash": "oTXy6NkSflt4dv8y9vzW+IOk1iF4HyTDClK+AyhXIz4=",
   "Source": "FeedManagementService",
   "BasePath": "_content/FeedManagementService",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\aho\\repos\\CatsStatistics\\api\\api\\api.csproj",
+      "Version": 2,
+      "Source": "api",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }
