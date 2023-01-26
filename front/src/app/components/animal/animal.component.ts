@@ -26,7 +26,9 @@ export class AnimalComponent implements OnInit {
 
   modalTitle: string = '';
   activateAddAnimalComponent: boolean = false;
+  activateStartComponent: boolean = false;
   animal: any;
+  startName: any;
 
   modalAdd() {
     this.animal = {
@@ -37,6 +39,15 @@ export class AnimalComponent implements OnInit {
     };
     this.modalTitle = "Новый питомец";
     this.activateAddAnimalComponent = true;
+  }
+
+  modalStart() {
+    this.startName = {
+      id: 0,
+      name: null,
+    };
+    this.modalTitle = "Пуск";
+    this.activateStartComponent = true;
   }
 
   modalClose() {
