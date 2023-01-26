@@ -5,6 +5,10 @@
           (click)="modalAdd()">
     Добавить питомца
   </button>
+  <button type="button" class="btn btn-outline-dark float-end m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+          (click)="modalStart()">
+    Пуск
+  </button>
 
   <table class="table table-striped">
     <thead>
@@ -42,6 +46,7 @@
         </div>
         <div class="modal-body">
           <app-add-animal [animal]="animal" *ngIf="activateAddAnimalComponent"></app-add-animal>
+          <app-edit-animal *ngIf="activateStartComponent"></app-edit-animal>
         </div>
       </div>
     </div>
