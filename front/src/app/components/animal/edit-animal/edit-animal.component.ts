@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-edit-animal',
@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class EditAnimalComponent implements OnInit {
 
   constructor() { }
+
+  @Input() startName: any;
+  id: number = 0;
+  name: string = "";
 
   ngOnInit(): void {
   }

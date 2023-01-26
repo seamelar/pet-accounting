@@ -46,7 +46,7 @@
         </div>
         <div class="modal-body">
           <app-add-animal [animal]="animal" *ngIf="activateAddAnimalComponent"></app-add-animal>
-          <app-edit-animal *ngIf="activateStartComponent"></app-edit-animal>
+          <app-edit-animal [startName]="startName" *ngIf="activateStartComponent"></app-edit-animal>
         </div>
       </div>
     </div>
