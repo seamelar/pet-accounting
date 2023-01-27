@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { TestService } from '../../../test.service';
 
 @Component({
   selector: 'app-edit-animal',
@@ -7,13 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EditAnimalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: TestService) { }
+
+  testInscription!: Observable<any[]>;
 
   @Input() startName: any;
   id: number = 0;
   name: string = "";
 
   ngOnInit(): void {
+    this.testInscription = this.service.getTestInscription();
   }
 
 }
